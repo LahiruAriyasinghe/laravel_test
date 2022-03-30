@@ -17,7 +17,7 @@
 
         </div>
         <div class="px-8 py-4 bg-gray-50 border-t border-gray-100 flex justify-end items-center">
-          <loading-button :loading="form.processing" class="btn-indigo" type="submit">Create Organization</loading-button>
+          <loading-button :loading="form.processing" class="btn-indigo" type="submit">Create Customer</loading-button>
         </div>
       </form>
     </div>
@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     store() {
-      this.form.post(this.route('organizations.store'))
+      this.form.post(this.route('customers.store'))
     },
     addContact(index) {
         this.form.contacts.push({
@@ -67,4 +67,5 @@ export default {
       },
   },
 }
+
 </script>
