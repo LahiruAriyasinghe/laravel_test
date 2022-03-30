@@ -51,7 +51,7 @@ class OrganizationsController extends Controller
         $customer->save();
 
         $contacts = Request::get('contacts');
-        
+        //changes
         foreach ($contacts as $cont) {
             $contact = new Contact;
             $contact->customer_id = $customer->id;
